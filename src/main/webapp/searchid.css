@@ -1,0 +1,79 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  }
+body 
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-popup {
+  display: none;
+}
+
+
+/* Style the header */
+header 
+{
+  background-color: #666;
+  /*opacity:0.7;*/
+  background: rgba(0, 0, 0, 0.4);
+  padding: 30px;
+  text-align: center;
+  font-size: 45px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section 
+{
+background: rgba(0, 0, 0, 0.1);
+  display: -webkit-flex;
+  text-align: center;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav 
+{
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 0.5;
+  background: #ccc;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* Style the list inside the menu */
+nav ul 
+{
+
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article 
+{
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  /*opacity:0.7;*/
+  background: rgba(0, 0, 0, 0.1);
+  padding: 50px;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) 
+{
+  section 
+  {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
